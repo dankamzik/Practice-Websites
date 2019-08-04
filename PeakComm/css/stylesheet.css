@@ -1,0 +1,140 @@
+body{
+  margin:0;
+  font-family: arial;
+}
+.container-customercare{
+  text-align: right;
+  color:white;
+  background-color: #FC7A00;
+  padding-top: .25em;
+  padding-bottom: .25em;
+  padding-right: 15em;
+}
+.container-header{
+  margin-top: 1em;
+  margin-bottom:1em;
+}
+.block-header{
+  display:block;
+  max-width: 80%;
+  margin: 0 auto;
+  padding-top:1em;
+  padding-bottom: 2em;
+}
+.container-header ul{
+  list-style-type: none;
+}
+.container-header li {
+    display: inline-block;
+    padding:0 2%;
+}
+.nav-left{
+  display: inline-block;
+  width: 40%;
+  text-align: left;
+}
+.nav-right{
+display:inline-block;
+font-size: 1.25em;
+width: 58%;
+text-align:right;
+}
+.nav-right a {
+  text-decoration:none;
+color:gray;
+}
+.container-mainpic{
+  text-align:center;
+  background-color: #C2C7C7;
+  padding-top: 3em;
+  padding-bottom:3em;
+}
+.large-pic{
+  display:inline-block;
+  border-style:solid;
+  border-color:gray;
+}
+.container-aboutheader{
+   list-style-type: none;
+  background-color:#31A3FF !important;
+  display:inline-block;
+}
+.container-aboutheader ul{
+  color:white;
+  list-style-type: none;
+  border-style: solid;
+}
+.container-aboutbody{
+  color:white;
+  background-color:#31A3FF;
+  padding-top: 1em;
+  padding-bottom:1em;
+}
+.block-aboutbody{
+  display:block;
+  max-width: 80%;
+  margin: 0 auto;
+}
+.container-aboutbody .item{
+  display:inline-block;
+  width:21%;
+  margin-right:3%;
+}
+.container-aboutbody .item h2{
+  border-bottom: 1px solid;
+  padding-bottom: 7px;
+}
+.container-aboutbody .item a{
+  padding: 7px 20px;
+  background: linear-gradient(#23C0FC, white);
+  color:white;
+  font-size:15px;
+  text-decoration: none;
+}
+.container-aboutbody .item p{
+  font-size: .9em;
+}
+.container-buttons{
+  background-color:#31A3FF;
+}
+.block-buttons{
+  display:block;
+  max-width: 80%;
+  margin: 0 auto;
+}
+.container-footer{
+  display:block;
+  background-color: #FC7A00;
+}
+.block-footer {
+  max-width:80%;
+  margin: 0 auto;
+  padding: 0 2em;
+}
+.container-footerleft{
+  list-style-type: none;
+  color:white;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  float:left;
+}
+.container-footerright{
+  list-style-type: none;
+  color:white;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  float:right;
+}
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */

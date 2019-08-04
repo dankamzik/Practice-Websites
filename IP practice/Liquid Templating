@@ -1,0 +1,121 @@
+#Liquid Templating Notes
+
+What is Liquid?
+Liquid is a templating syntax used in platforms such as Shopify and Jekyll.
+It acts as a bridge between templates and data, which allows themes to become more flexible and reusable.
+
+So how does it work?
+Lets begin with an example that charts out the liquid process:
+
+1. We begin with a user requesting a URL of, say, a Shopify store.
+2. Shopify then works out which of it's digital stores is being requested.
+3. Shopify then selects the required liquid template from the active theme directory.
+4. The liquid placeholders are replaced with real data stored on the Shopify platform.
+5. The compiled HTML page will now be sent to the browser.
+6. Finally, the browser processes the HTML file and imports all the other required assets such as imgs, JS, CSS, etc.
+
+Now that we have a basic overview on how Liquid templating works, lets get into how to use it.
+
+The file extension for liquid is easy: .liquid
+For example:
+index.liquid
+theme.liquid
+screen.css.liquid
+site.js.liquid
+
+Liquid Syntax:
+
+{{...}} and {%...%} denote output and logic
+Objects use the dot Syntax
+Loops allow for iteration over objects
+filters manipulate output
+operators allow for comparison
+
+Here's a basic liquid syntax; the top line is logic and the line below is output. The final line ends the loop.
+Ex:
+
+{% for image in product.images %}
+<img src="{{ image | img_url: 'medium' }}">
+{% endfor %}
+
+As you can probably surmise, the above tag drops in an image within your template. However, due to the large-scale nature of liquid,  we aren't just adding in a single image. With this code we are adding in every image we have associated with "product".
+Please make note that there is no information here dealing with where these images are being laid out within the HTML web page. This responsibility is passed on to the Shopify platform. We may have (and in the case of Electric Enjin, almost definitely did) specify where and how our images for a specific page will be displayed in our CSS, Shopify saves the CSS file, stores it, and then recalls it when needed so we don't have to.
+
+Here's another basic line of Liquid code:
+
+<h2>{{ product.title }}</h2>
+
+So what this code acts as is the placeholder for the title of our product, on a specific page. It would probably be something like this: <h2>Full Tang Katana</h2> in static HTML.
+
+<div>{{ shop.description }}</div>
+
+In the above code, "shop" is the object and "description" is the property. We are using dot-notation to specify our object and act on our property.
+
+An important concept in Liquid is Collections.
+Liquid Collections:
+
+- Are signified by plural object names (rather than "shop", it would be "shops")
+- Each individual item has it's own property
+- Liquid loops allow us to output multiple items
+- You can also target individual items directly as well, should you want or need to
+
+
+Liquid Loops:
+We have already seen a liquid loop in these notes:
+
+{% for image in product.images %}
+<img src="{{ image | img_url: 'medium' }}">
+{% endfor %}
+
+In the above code, we are saying:
+ " 'for'(begin loop) every 'image'(object) in 'product.images'(collection), we will output every image element and specifically output the 'medium' version of each image ".
+
+Logic:
+- controls what is output in a template
+- logic does not output directly into a template visually, but rather dictates what code will be loaded in the browser
+- It uses common language constructs such as 'if' and 'else'
+
+Lets check out a logical statement:
+
+{% if product.available %}
+<h2>Price: $99.99</h2>
+{% else %}
+<h2 class="sold-out">Sorry - we are currently sold out</h2>
+{% endif %}
+
+This one should be very easy to figure out, given what we now know about liquid templating.
+First, we begin with an if statement that lists the price of an item, should it be available.
+If it is not, our else statement comes into play and displays the message "Sorry - we are currently sold out".
+
+Filters:
+- manipulate output data in some way
+- allow themes to be more flexible, allowing Shopify (or another platform that uses LT) to store the meat of our display data
+- reduce the amount of code to write
+
+Lets check out some Filter code:
+
+<p class="date-time">
+{{ article.published_at | date: '%d %B %Y' }}
+</p>
+
+The above code takes the object 'article' and runs it through the published_at property, then applies the date to it.
+
+{{ 'style.css' | asset_url | stylesheet_tag }}
+
+this code passes in our stylesheet, filters it in through our asset_url which will create a fully qualified url to that particular asset on the platform. Finally, all of that data is passed through the stylesheet_tag, which will create a style tag that will be added into our final html web page, and will then be used by the browser.
+
+Operators:
+Allow us to compare variables, of which we can create ourselves. As we know, variables can be almost anything (strings, integers etc.).
+
+Lets check out a Liquid Operator code snippet:
+
+{% if cart.item_count > 0 %}
+<p>You have {{ cart.item_count }}
+{{ cart.item_count | pluralize: 'item', 'items' }} in your cart</p>
+{% else %}
+<p>There's nothing in your cart. Why not have a <a href="/products">look at our products</a></p>
+{% endif %}
+
+Although this code is slightly longer than what we have seen, it is easy to interpret.
+We being with a logical statement; if the number of items in your cart is greater than zero, display the message "You have no item/s in your cart" The code you see within this string is a way for us to dictate whether we should use the plural of 'item' or not. Liquid has some built in foundations that allow us to not have to specify the number of items it takes to use the plural word form. If there are any more than 1 item in the cart, the word 'item' becomes 'items'.
+If we have less than a single item, then we display the message "There's nothing in your cart. Why not have a look at our product page" The anchor tag turns the last words in that string into a link to click through into the product page.

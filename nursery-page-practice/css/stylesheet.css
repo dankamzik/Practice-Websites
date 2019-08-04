@@ -1,0 +1,170 @@
+.container-nav{
+  background-color: white;
+  display: block;
+  border-top: 10px solid;
+  border-color: #969E3A;
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+.logo{
+  margin-left: 8em;
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.logo h2{
+  margin-bottom: 0;
+}
+
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.nav{
+  margin-top: 2em;
+  display: inline-block;
+  float: right;
+  margin-right: 8em;
+}
+
+.nav li{
+  display:inline-block;
+}
+
+.container-hero{
+  background-image: url('../images/landscape.jpg');
+  height: 50vh;
+  margin: 0;
+  width: 100%;
+  display: inline-block;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-text{
+  text-align: center;
+  margin-top: 20em;
+  color: white;
+}
+
+.container-info{
+  display: block;
+  padding: 0;
+}
+
+.info{
+  margin-top: 5em;
+  margin-left: 19em;
+  width: 25%;
+  border-right: 2px solid;
+  border-color: #eeeeee;
+  display: inline-block;
+}
+
+.info li{
+  list-style-type: none;
+  text-align: right;
+  float: right;
+  clear: right;
+  padding-right: 5em;
+}
+
+.container-button{
+  display: block;
+}
+
+img{
+  padding-top: 5em;
+  display: inline-block;
+  width: 15em;
+  height: 15em;
+  margin-left: 4em;
+  margin-bottom: 4em;
+}
+
+.wrapper-info{
+  padding-bottom: 2em;
+}
+
+.container-button{
+  float: right;
+  clear:right;
+  margin-top: 11em;
+  margin-right: 25em;
+  margin-bottom: 10em;
+}
+
+.quote h2{
+    text-align: center;
+    color: #ADB54A;
+}
+
+button{
+  margin-left: 3em;
+  margin-top: 1em;
+  background-color: #9EA615;
+  border-radius: 2px;
+  border-color: #9EA615;
+  border-style: solid;
+  padding-top: .5em;
+  padding-bottom: 1em;
+  padding-left: .5em;
+  padding-right: .5em;
+  color: white;
+}
+
+footer{
+  padding-top: 1em;
+  display: block;
+  background-color: #231F20;
+  padding-bottom: 1em;
+}
+
+.footer-left{
+  color: #eeeeee;
+  display: inline-block;
+  float: left;
+  width: 33%;
+}
+
+.footer-middle{
+  color: #eeeeee;
+  display: inline-block;
+  width: 33%;
+}
+
+.footer-right{
+  color: #eeeeee;
+  display: inline-block;
+  float: right;
+  width: 33%
+}
+
+.container-subfooter{
+  padding-top: 2em;
+  padding-bottom: 1em;
+  display: block;
+  background-color: #231F20;
+  border-top: 1px solid;
+  border-color: #eeeeee;
+}
+
+.sub-footer-left{
+  display: inline-block;
+  color: #eeeeee;
+  //width: 50%;
+}
+
+.sub-footer-right{
+  display: inline-block;
+  color: #eeeeee;
+  float: right;
+}
+
+.wrapper-footer{
+  margin: 0 auto;
+  max-width: 80%;
+}

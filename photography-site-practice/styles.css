@@ -1,0 +1,43 @@
+.crown {
+  display: flex;
+  background-color: red;
+  width: 100%;
+  max-height: 50px; }
+  .crown img {
+    display: inline-block;
+    width: 30px;
+    height: 25px;
+    align-items: center; }
+  .crown p {
+    color: white;
+    display: inline-block; }
+  .crown .tag-line p {
+    max-width: 100%;
+    max-height: 50px;
+    color: white; }
+
+nav {
+  display: flex; }
+  nav .logo img {
+    max-width: 150px;
+    max-height: 100px; }
+  nav ul li {
+    display: inline-block;
+    padding: 10px; }
+    nav ul li a {
+      text-decoration: none;
+      color: black; }
+      nav ul li a:hover {
+        color: red; }
+  nav .search-placeholder img {
+    width: 30px;
+    height: 25px;
+    align-items: center;
+    margin: 10px; }
+
+.hero {
+  backgorund-image: url("assets/hero-img.jpg");
+  width: 100%;
+  max-height: 20vh; }
+
+/*# sourceMappingURL=styles.css.map */
