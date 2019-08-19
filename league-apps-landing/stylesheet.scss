@@ -1,0 +1,16 @@
+.banner{
+    background-color:#005000;
+    color: #ead41a;
+    display: flex;
+    justify-content: right;
+    padding-right: 26em;
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+nav{
+    display: flex;
+    ul li a{
+        list-style-type: none;
+    }
+}

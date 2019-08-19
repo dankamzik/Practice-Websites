@@ -1,0 +1,169 @@
+.banner{
+    background-color:#005000;
+    color: #ead41a;
+    display: flex;
+    justify-content: right;
+    padding-right: 26em;
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+nav li.logo img{
+    max-width: 12em;
+    max-height: 2.5em;
+    margin-top: -10px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 27em;
+    padding-right: 27em;
+    margin-top: 2em;
+}
+
+nav ul li {
+    list-style-type: none;
+    font-family: helvetica;
+}
+
+nav ul li a{
+    color: #005000;
+    text-decoration: none;
+}
+
+nav ul li.trial a{
+    border: 2px solid #75a0d8;
+}
+
+nav ul li.trial a{
+    padding: 10px 10px 10px 10px;
+}
+
+nav ul li.demo a{
+    border: 2px solid #75a0d8;
+}
+
+nav ul li.demo a{
+    padding: 10px 10px 10px 10px;
+}
+
+.hero .hero-image{
+    background-image: url("img/wallpapersden.com_abstract-vaporwave-retrowave-sun-reflaction_1920x1080.jpg");
+    height: 33em;
+    background-color: #f9f9f9;
+}
+
+.hero{
+    background-color: #f9f9f9;
+    padding-top: 3em;
+}
+
+.hero .hero-image .mission{
+    color: white;
+    text-align: left;
+    margin-left: 28em;
+    padding-top: 8em;
+    font-family: helvetica;
+}
+
+.hero .hero-image .mission h5{
+    color: #75a0d8;
+    margin-top: -2em;
+    font-family: helvetica;
+}
+
+.hero .hero-image .mission h5.button{
+    background-color: #75a0d8;
+    color: white;
+    width: 10em;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    margin-top: 2em;
+    font-family: helvetica;
+}
+
+/* FONT: D-DIN Condensed Bold */
+
+.cta{
+    text-align: center;
+    background-color: #f9f9f9;
+    padding-bottom: 4em;
+}
+
+.cta h1{
+    background-color: #f9f9f9;
+    margin: 0 auto;
+    padding-top: 2em;
+    text-align: center;
+    color: #005000;
+}
+
+.cta p{
+    color: gray;
+    font-family: helvetica;
+}
+
+.cta .button{
+    background-color: #75a0d8;
+    color: white;
+    max-width: 10em;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    margin-top: 2em;
+    font-family: helvetica;
+    margin: 0 auto;
+}
+
+.features .row-one{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60%;
+    padding-left: 25em;
+    padding-bottom: 5em;
+    padding-top: 5em;
+}
+
+.features .row-one .pg-one h1{
+    color: #005000;
+}
+
+.features .row-one .pg-one h5{
+    color: #77ce3f;
+}
+
+.features .row-two{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 60%;
+    padding-left: 25em;
+    padding-bottom: 5em;
+}
+
+.features .row-two .pg-two h1{
+    color: #005000;
+}
+
+.features .row-two .pg-two h5{
+    color: #77ce3f;
+}
+
+.features .row-three{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60%;
+    padding-left: 25em;
+}
+
+.features .row-three .pg-three h1{
+    color: #005000;
+}
+
+.features .row-three .pg-three h5{
+    color: #77ce3f;
+}
