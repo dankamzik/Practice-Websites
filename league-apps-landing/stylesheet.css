@@ -168,11 +168,17 @@ nav ul li.demo a{
     color: #77ce3f;
 }
 
-.wrapper-stats{
+.stats{
     display: flex;
     background-image: linear-gradient(forestgreen, darkgreen);
     height: 21em;
    /* flex-direction: row; */
+}
+
+.stats-wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 18px 0px;
 }
 
 .wrapper-stats .stats-title{
@@ -180,52 +186,65 @@ nav ul li.demo a{
     justify-content: center;
 }
 
-.wrapper-stats .stats-title h3{
+.stat-block{
+    display: flex;
+}
+
+.stats .stats-wrapper .stats-title h3{
     color: white;
     font-family: helvetica;
     text-align: center;
     margin-top: 2.5em;
 }
 
-.wrapper-stats .stats-big {
-    display: inline-block;
-  /*  flex-direction: row; */
+.stat-block{
+    display:flex;
+    text-align: center;
     justify-content: space-between;
-    color: white;
-    margin-top: 6em; 
 }
 
-.wrapper-stats .stats-small {
-    display: inline-block;
-  /*  flex-direction: row; */
-    justify-content: space-between;
+.stat-block h1{
+    color: white;
+}
+
+.stat-block p{
     color: #ead41a;
-    margin-top: 10em;
+}
+
+.poi-section{
+    display: flex;
 }
 
 .poi-wrapper{
-    display: flex;
     text-align: center;
 }
 
 .poi-wrapper .poi-title h1{
     color: #005000;
-    justify-content: center;
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 18px 0px;
 }
 
-.poi-wrapper .poi-features-wrapper .test-one{
+.poi-features-block{
+    display: flex;
+}
+
+.poi-wrapper .poi-features-wrapper {
     margin-top: 7em;
     width: 80%;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
+}
+.poi-wrapper .poi-features-wrapper div {
+    flex-basis: 33%;
 }
 
 .poi-wrapper .poi-features-wrapper .test-two{
     margin-top: 7em;
     width: 80%;
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
