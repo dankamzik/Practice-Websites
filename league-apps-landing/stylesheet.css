@@ -81,7 +81,7 @@ nav ul li.demo a{
     padding-bottom: 12px;
     text-align: center;
     margin-top: 2em;
-    font-family: helvetica;
+    font-family: D-DIN;
 }
 
 /* FONT: D-DIN Condensed Bold */
@@ -223,7 +223,8 @@ nav ul li.demo a{
     color: #005000;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 18px 0px;
+    padding-top: 3em;
+    padding-bottom: 1.5em;
 }
 
 .poi-features-block{
@@ -231,24 +232,69 @@ nav ul li.demo a{
 }
 
 .poi-wrapper .poi-features-wrapper {
-    margin-top: 7em;
-    width: 80%;
+    width: 60%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-left: 23em;
 }
+
 .poi-wrapper .poi-features-wrapper div {
-    flex-basis: 33%;
+    flex-basis: 33%; 
 }
 
-.poi-wrapper .poi-features-wrapper .test-two{
-    margin-top: 7em;
-    width: 80%;
-    flex-direction: row;
-    justify-content: space-between;
+.poi-wrapper .poi-features-wrapper .poi-four {
+    margin-top: 5em;
+    margin-bottom: 3em;
 }
 
+.poi-wrapper .poi-features-wrapper .poi-five {
+    margin-top: 5em;
+    margin-bottom: 3em;
+}
 
+.poi-wrapper .poi-features-wrapper .poi-six {
+    margin-top: 5em;
+    margin-bottom: 3em;
+}
 
+.team-section{
+    display: flex; 
+    background-image: url("img/team.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.team-section .team-wrapper{
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 60%;
+    margin-bottom: 3em;
+}
+
+.team-section .team-wrapper h1{
+    color: #77ce3f;
+}
+
+.team-section .team-wrapper p{
+    color: white;
+}
+
+.team-section .team-wrapper h5{
+    background-color: #75a0d8;
+    width: 10em;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.team-section .team-wrapper h5 a{
+    text-decoration: none;
+    color: white;
+}
 
