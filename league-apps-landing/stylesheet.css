@@ -298,3 +298,82 @@ nav ul li.demo a{
     color: white;
 }
 
+.testis-section .testis-wrapper{
+    background-image: url("img/grass.jpg");
+    display: flex;
+}
+
+.testis-section .testis-wrapper img{
+    border: 0px solid;
+    border-radius: 50%;
+    margin: 3em 2em 3em 20em;
+}
+
+.testis-section .testis-wrapper .quote-wrapper h2{
+    color: white;
+    text-align: center;
+    margin-top: 6em;
+}
+
+.testis-section .testis-wrapper .quote-wrapper{
+    max-width: 40%;
+    text-align: center;
+    word-wrap: wrap;
+}
+
+.cta-two-section{
+    display: flex; 
+    background-color: #f9f9f9;
+}
+
+.cta-two-section .cta-two-wrapper{
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 60%;
+    margin-bottom: 3em;
+}
+
+.cta-two-section .cta-two-wrapper h1{
+    color: #77ce3f;
+    font-family: helvetica;
+    margin-top: 3em;
+}
+
+.cta-two-section .cta-two-wrapper p{
+    color: gray;
+}
+
+.cta-two-section .cta-two-wrapper h5{
+    background-color: #75a0d8;
+    width: 10em;
+    padding: 12px 12px 12px 12px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.cta-two-section .cta-two-wrapper h5 a{
+    text-decoration: none;
+    color: white;
+}
+
+footer{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    max-width: 60%;
+    margin-left: 24em;
+}
+
+footer h3{
+    color: #77ce3f; 
+    margin-top: 3em;
+    line-height: 25px;
+    font-family: helvetica;
+}
+
+footer p{
+    color: gray;
+    line-height: 12px;
+}
+
